@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Fixed
+- Mount the PostgreSQL 18 sample volume at `/var/lib/postgresql`, the path its entrypoint expects (#520).
 - Register the local acceptance runner's synthetic source with the selected `--db-host` instead of the literal `mariadb` (#532).
 - Honor the configured PostgreSQL schema in MCP table discovery when table authorization is disabled (#493).
 - Preserve exact signed 64-bit integer bind parameters received by MCP over HTTP and stdio (#486).
